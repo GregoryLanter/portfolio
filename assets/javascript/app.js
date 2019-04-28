@@ -3,24 +3,24 @@ var top_button_holder = $('<div class="button-holder">');
 var top_button = $('<i class="far fa-keyboard light-text clear"></i>');
 var section_title = $('<div class="section-title clear">');
 var top_header = $('<h2 class="clear">Experience</h2>');
-var top_div = $('<div class="col-md-12 bio">');
+var top_div = $('<div class="col-md-12 col-xs-12 bio">');
 var top_text = "";
 
 var mid_button_holder = $('<div class="button-holder">');
 var mid_button = $('<i class="fas fa-database light-text clear icon=pro"></i>');
 var mid_title = $('<div class="section-title">');
 var mid_header = $('<h2 class="clear">Professional Skills</h2>');
-var mid_holder = $('<div class="col-md-12 bio">');
+var mid_holder = $('<div class="col-md-12 col-xs-12  bio">');
 var mid_text = "";
 
 var bottom_button_holder = $('<div class="button-holder">');
 var bottom_button = $('<i class="fas fa-graduation-cap light-text clear"></i>');
 var bottom_section_title = $('<div class="section-title">');
 var bottom_header = $('<h2 class="clear">Education</h2>');
-var bottom_holder = $('<div class="col-md-12 bio">');
+var bottom_holder = $('<div class="col-md-12 col-xs-12  bio">');
 var bottom_text = "";
 
-var instruction_holder = $('<div class="col-md-12 bio">');
+var instruction_holder = $('<div class="col-md-12 col-xs-12  bio">');
 var instructions = $('<h4>Click an icon learn more about that program</h4>');
 
 function load(id) {
@@ -89,7 +89,7 @@ function greg(){
     top_text = "<table class='table table-dark'><tr><th>Position</th><th>Company</th><th></th></tr><tr><td >Sr Application Developer</td><td >Anthem</td><td >Mar 2000 - Present</td></tr><tr><td >Developer</td><td >B-Line Systems</td><td >1998 - 2000</td></tr><tr><td >Programer</td><td >Anheuser-Busch</td><td >1991 - 1998</td></tr></table>";
     mid_button = $('<i class="fas light-text fa-database clear icon-pro"></i>');
     mid_header = $('<h2 class="clear">Professional Skills</h2>');
-    mid_text = "<table class='table-sm table-dark'><tr><td >.Net</td><td >javascript</td><td >jQuery</td><td>node.js</td><td >HTML</td><td >CSS<td >OOP</td><td >Agile</td><td >Jira</td></tr>";
+    mid_text = "<table class='table table-dark'><tr><td >.Net</td><td >javascript</td><td >jQuery</td></tr><tr><td>node.js</td><td >HTML</td><td >CSS</td ></tr><tr><td>OOP</td><td >Agile</td><td >Jira</td></tr>";
 
     bottom_button = $('<i class="fas light-text fa-graduation-cap clear"></i>');
     bottom_header = $('<h2 class="clear">Education</h2>');
