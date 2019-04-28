@@ -74,11 +74,6 @@ body{
     width:68%;
     border-radius: 15px 50px;
 }
-/*.clear-fix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
 
 .bio{
     margin-right:0px;
@@ -188,44 +183,7 @@ body{
     width: 107%;
 
 }
-/**This gives me the pips like items between links**/
-.Left_Outline{
-    border-right: 1px;
-    border-style: solid;
-    border-top: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #cccccc;
-}
 
-.box1{
-    background: #ffffff;
-    width: 66%;
-    position: relative;
-    /* left: 0%;
-    top: 0px; */
-    height: 80px;
-    padding-left: 20px;
-    padding-right: 10px;
-    margin: 0px;
-}
-
-/**styling for the me title**/
-.aboutMe{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    position: relative;
-    font-weight: bold;
-    font-size: 25px;
-    display: inline-block;
-    padding: 20px;
-    padding-left: 25px;
-    padding-bottom: 20px;
-    left: -20px;  
-}
-/**I know I should not use so much repeated code but didnt know how to stack classes so i repeated the code for each box**/
 
 .thumbnail{
     height: 130px;
@@ -313,6 +271,9 @@ body{
     background-repeat: no-repeat;
 }
 
+td{
+    padding:6px;
+}
 .gifs{
     background-image: url(../images/gif.png);
     background-size: cover;
@@ -393,31 +354,3 @@ body{
     display: block;
     font-size: 20px;
 }
-
-/**Background image**/
-.old_Map{
-    background-image: url(../images/old_map.png);
-    height: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    /**background-repeat: repeat;
-    background-size: cover;
-    background: #ffccff;
-    position: relative;
-    Top: -3px;**/
-}
-/**set the footer bottom**/
-.fixed-bottom{
-    background-color:#666666;
-    background-image: none;
-    height: 45px;
-}
-/**give me some space between items**/
-.contactBuffer{
-    margin-top: 15px;
-}
-.about-format{
-    padding-left:20px;
-    color: #cccccc;
-}
-
