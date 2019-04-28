@@ -150,7 +150,7 @@ function gif(){
     mid_button = $('<i class="fas light-text fa-link clear"></i>');
     mid_header = $('<h2 class="clear">Links</h2>');
 
-//mid_text = '<div id="links"><div class="link-holder bart-rpg" data_id = "bart"><a href="https://gregorylanter.github.io/unit-4-game/"><div class="thumbnail rpg"><div class="banner">Play</div></div></a></div>';
+
     mid_text = '<div id="links"><div class="link-holder ajax" data_id = "gif"><a href="https://gregorylanter.github.io/Giphy-app/"><div class="thumbnail gifs"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div id="links"><div class="link-holder" data_id = "gif"><a href="https://github.com/GregoryLanter/Giphy-app"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
     
@@ -167,7 +167,9 @@ function mta(){
     top_text = "<h4>Monstropolis Transit Athority</h4>";
     mid_button = $('<i class="fas light-text fa-link clear"></i>');
     mid_header = $('<h2 class="clear">Links</h2>');
-    mid_text = '<div id="links"><div class="link-holder" data_id = "mta"><a href="https://gregorylanter.github.io/Train-Schedule/"><div class="thumbnail mta"><div class="banner">Play</div></div></a></div>';
+
+//mid_text = '<div id="links"><div class="link-holder bart-rpg" data_id = "bart"><a href="https://gregorylanter.github.io/unit-4-game/"><div class="thumbnail rpg"><div class="banner">Play</div></div></a></div>';
+    mid_text = '<div id="links"><div class="link-holder train" data_id = "mta"><a href="https://gregorylanter.github.io/Train-Schedule/"><div class="thumbnail monster"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div id="links"><div class="link-holder" data_id = "mta"><a href="https://github.com/GregoryLanter/Train-Schedule"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
     
     bottom_button = $('<i class="fas light-text fa-clipboard clear"></i>');

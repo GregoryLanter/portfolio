@@ -260,7 +260,7 @@ body{
     margin-left: 10%;
     float: left;
 }
-.hangman, .bart-rpg, .beer-game, .ajax{
+.hangman, .bart-rpg, .beer-game, .ajax, .train{
     width:52%;
     margin-left: 4%;
 }
@@ -324,6 +324,13 @@ body{
     background-image: url(../images/MTA.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.monster{
+    background-image: url(../images/sched.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
 }
 /**one class for the banner across each image**/
 .banner{
