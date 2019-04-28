@@ -82,15 +82,15 @@ function greg(){
     top_button = $('<i class="far light-text fa-keyboard clear"></i>');
     top_header = $('<h2 class="clear">Experience</h2>');
     
-    top_text = "<table class='table'><tr><td>Sr Application Developer</td><td>Anthem</td><td>Mar 2000 - Present</td></tr><tr><td>Developer</td><td>B-Line Systems</td><td>1998 - 2000</td></tr><tr><td>Programer</td><td>Anheuser-Busch</td><td>1991 - 1998</td></tr></table>";
+    top_text = "<table class='table'><tr><th>Position</th><th>Company</th><th></th></tr><tr><td>Sr Application Developer</td><td>Anthem</td><td>Mar 2000 - Present</td></tr><tr><td>Developer</td><td>B-Line Systems</td><td>1998 - 2000</td></tr><tr><td>Programer</td><td>Anheuser-Busch</td><td>1991 - 1998</td></tr></table>";
     mid_button = $('<i class="fas light-text fa-database clear icon-pro"></i>');
     mid_header = $('<h2 class="clear">Professional Skills</h2>');
-    mid_text = "<table class='table'><tr><td>.Net</td><td>Unidata Database</td><td>Agile Development</td></tr><tr><td>Jira</td></tr>";
+    mid_text = "<table class='table'><tr><td>.Net</td><td>javascript</td><td>jQuery</td></tr><tr><td>node.js</td><td>HTML</td><td>CSS</td></tr><tr><td>Unidata Database</td><td>Agile Development</td><td>Jira</td></tr>";
 
     bottom_button = $('<i class="fas light-text fa-graduation-cap clear"></i>');
     bottom_header = $('<h2 class="clear">Education</h2>');
     bottom_text = "Souther Illinois University Edwardsville - BA Computer Science 2002";
-    instructions = $('<h4>Click an icon, on the right, to learn more about that program</h4>');
+    instructions = $('<h6>Click an icon, on the right, to learn more about that program</h6>');
 }
 
 function nhl(){
