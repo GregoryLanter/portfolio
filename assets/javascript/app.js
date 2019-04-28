@@ -90,7 +90,7 @@ function greg(){
     bottom_button = $('<i class="fas light-text fa-graduation-cap clear"></i>');
     bottom_header = $('<h2 class="clear">Education</h2>');
     bottom_text = "Souther Illinois University Edwardsville - BA Computer Science 2002";
-    instructions = $('<h4>Click an icon learn more about that program</h4>');
+    instructions = $('<h4>Click an icon, on the right, to learn more about that program</h4>');
 }
 
 function nhl(){
