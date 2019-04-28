@@ -1,7 +1,7 @@
-/* *{
+*{
     border-radius: 5px;
     border: 1px solid blue
-}*/
+}
 html  {
 
     width: 100%;
@@ -14,10 +14,11 @@ html  {
 body{
     font-family: 'Dosis', sans-serif;
     width: 100vw;
-    height: 100vh;
+    height: 99vh;
 }
 .personal{
     background-color: #93acbf;
+    height: 98vh;
 }
 .program{
     /*background-color: #EAE7C0;*/
@@ -27,6 +28,7 @@ body{
     padding-left: 0px;
 
     background-color: #93ACBF;
+    height:98vh;
 }
 
 #thumbs{
@@ -37,12 +39,13 @@ body{
 }
 #links{
     position: relative;
-    height: 85%;
-    width: 98%;
+    height: 28vh;
+    width: 100%;
     top: 0px;
 }
 .info{
     background-color: #EAE7C0;
+    height: 98vh;
 }
 .container{
     margin:0px;
@@ -82,6 +85,8 @@ body{
     padding:0px;
     height:31%;
     display:inline-block;
+    margin-bottom:15px;
+    margin-top:7px;
 }
 .bio-header{
     margin-right:0px;
@@ -129,6 +134,7 @@ body{
     padding-left: 15px;
     width:87%;
     display:inline-block;
+    height:41px;
 }
 .section-title-2{
     position: relative;
@@ -246,17 +252,17 @@ body{
 .link-holder{
     position: relative;
     /*top:3%;*/
-    height:130px;
-    width:19%;
+    height:27vh;
+    width:26%;
     left:0%;
     margin-bottom: 3px;
     margin-right: 0px;
-    margin-left: 18%;
+    margin-left: 10%;
     float: left;
 }
-.hangman{
-    width:43%;
-    margin-left: 7%;
+.hangman, .bart-rpg{
+    width:52%;
+    margin-left: 4%;
 }
 
 #info-space{
@@ -266,6 +272,7 @@ body{
     background-image: url(../images/hockey.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 267px;
 }
 .nhl{
     background-image: url(../images/nhl.png);
@@ -276,14 +283,26 @@ body{
     background-image: url(../images/git.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width:135px;    
 }
 .bart{
     background-image: url(../images/bart.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+.rpg{
+    background-image: url(../images/rpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
+}
 .beer{
     background-image: url(../images/beer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.trivia{
+    background-image: url(../images/trivia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
