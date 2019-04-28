@@ -260,7 +260,7 @@ body{
     margin-left: 10%;
     float: left;
 }
-.hangman, .bart-rpg{
+.hangman, .bart-rpg, .beer-game, .ajax{
     width:52%;
     margin-left: 4%;
 }
@@ -302,14 +302,22 @@ body{
     background-repeat: no-repeat;
 }
 .trivia{
-    background-image: url(../images/trivia.jpg);
+    background-image: url(../images/trivia.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 267px;
 }
 .giphy{
     background-image: url(../images/giphy.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.gifs{
+    background-image: url(../images/gif.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
 }
 
 .mta{
