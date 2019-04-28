@@ -1,14 +1,3 @@
-debugger;
-if (key==null){
-    var key = new Date();
-    alert(key);
-}else{
-    var screen = localStorage.getItem(key);
-    if (screen==null){
-        screen="greg"
-    }
-}
-
 var parent_div = $("<div>");
 var top_button_holder = $('<div class="button-holder">');
 var top_button = $('<i class="far fa-keyboard light-text clear"></i>');
@@ -59,7 +48,6 @@ function load(id) {
     parent_div.append(instruction_holder);
     $("#info-space").append(parent_div);
     // Store
-    localStorage.setItem(key, id);
 }
 greg();
 load("greg")
@@ -86,6 +74,9 @@ $(document.body).on("click", ".thumbnail-holder", function () {
         case "mta":
             mta();
         break;
+        case "rb":
+            recipe();
+        break;
     }
     load(id);
 });
@@ -108,7 +99,7 @@ function greg(){
 
 function nhl(){
     clear();
-    top_button = $('<i class="fas fa-hockey-puck light-text clear"></i>');
+    top_button = $('<i class="fas fa-hockey-puck light-text clear icon-2"></i>');
     top_header = $('<h2 class="clear">Title</h2>');
     top_text = "<h4>Hockey Hangman</h4>";
     mid_button = $('<i class="fas light-text fa-link clear"></i>');
@@ -116,14 +107,14 @@ function nhl(){
     mid_text = '<div id="links"><div class="link-holder hangman" data_id = "nhl"><a href="https://gregorylanter.github.io/Word_Guess_Game/" target="_blank"><div class="thumbnail hockey"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div class="link-holder" data_id = "nhl"><a href="https://github.com/GregoryLanter/Word_Guess_Game" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div></div>';
     
-    bottom_button = $('<i class="fas light-text fa-clipboard clear"></i>');
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
     bottom_header = $('<h2 class="clear">Notes</h2>');
     bottom_text = "A javascript game to guess NHL team names.";
     instructions = $('<h4>Click an icon learn more about that program</h4>');
 }
 function bart(){
     clear();
-    top_button = $('<i class="fas fa-fist-raised light-text clear"></i>');
+    top_button = $('<i class="fas fa-fist-raised light-text clear icon-3"></i>');
     top_header = $('<h2 class="clear">Title</h2>');
     top_text = "<h4>Bart's Battle RPG</h4>";
     mid_button = $('<i class="fas light-text fa-link clear"></i>');
@@ -132,14 +123,14 @@ function bart(){
     mid_text = '<div id="links"><div class="link-holder bart-rpg" data_id = "bart"><a href="https://gregorylanter.github.io/unit-4-game/" target="_blank"><div class="thumbnail rpg"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div class="link-holder" data_id = "bart"><a href="https://github.com/GregoryLanter/unit-4-game/" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
     
-    bottom_button = $('<i class="fas light-text fa-clipboard clear"></i>');
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
     bottom_header = $('<h2 class="clear">Notes</h2>');
     bottom_text = "A jQuery simple Role Playimg game.";
     instructions = $('<h4>Click an icon learn more about that program</h4>');
 }
 function beer(){
     clear();
-    top_button = $('<i class="fas fa-beer light-text clear"></i>');
+    top_button = $('<i class="fas fa-beer light-text clear icon-2"></i>');
     top_header = $('<h2 class="clear">Title</h2>');
     top_text = "<h4>Beer Trivia</h4>";
     mid_button = $('<i class="fas light-text fa-link clear"></i>');
@@ -149,7 +140,7 @@ function beer(){
     mid_text = '<div id="links"><div class="link-holder beer-game" data_id = "beer"><a href="https://gregorylanter.github.io/TriviaGame/" target="_blank"><div class="thumbnail trivia"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div class="link-holder" data_id = "beer"><a href="https://github.com/GregoryLanter/TriviaGame" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
     
-    bottom_button = $('<i class="fas light-text fa-clipboard clear"></i>');
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
     bottom_header = $('<h2 class="clear">Notes</h2>');
     bottom_text = "Trivia game using jQuery and Timers/Intervals.";
     instructions = $('<h4>Click an icon learn more about that program</h4>');
@@ -167,7 +158,7 @@ function gif(){
     mid_text = '<div id="links"><div class="link-holder ajax" data_id = "gif"><a href="https://gregorylanter.github.io/Giphy-app/" target="_blank"><div class="thumbnail gifs"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div class="link-holder" data_id = "gif"><a href="https://github.com/GregoryLanter/Giphy-app" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
     
-    bottom_button = $('<i class="fas light-text fa-clipboard clear"></i>');
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
     bottom_header = $('<h2 class="clear">Notes</h2>');
     bottom_text = "A jQuery app to pull back from Giphy API.";
     instructions = $('<h4>Click an icon learn more about that program</h4>');
@@ -175,7 +166,7 @@ function gif(){
 }
 function mta(){
     clear();
-    top_button = $('<i class="fas fa-train light-text clear"></i>');
+    top_button = $('<i class="fas fa-train light-text clear icon-2"></i>');
     top_header = $('<h2 class="clear">Title</h2>');
     top_text = "<h4>Monstropolis Transit Athority</h4>";
     mid_button = $('<i class="fas light-text fa-link clear"></i>');
@@ -184,12 +175,31 @@ function mta(){
     mid_text = '<div id="links"><div class="link-holder train" data_id = "mta"><a href="https://gregorylanter.github.io/Train-Schedule/" target="_blank"><div class="thumbnail monster"><div class="banner">Play</div></div></a></div>';
     mid_text += '<div class="link-holder" data_id = "mta"><a href="https://github.com/GregoryLanter/Train-Schedule" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
     
-    bottom_button = $('<i class="fas light-text fa-clipboard clear"></i>');
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
     bottom_header = $('<h2 class="clear">Notes</h2>');
     bottom_text = "A jQuery app using timers, input, and modal to schedule trains.";
     instructions = $('<h4>Click an icon learn more about that program</h4>');
 
 }
+
+function recipe(){
+    clear();
+    top_button = $('<i class="fas fa-list-alt light-text clear icon-2"></i>');
+    top_header = $('<h2 class="clear">Title</h2>');
+    top_text = "<h4>Recipe Buddy</h4>";
+    mid_button = $('<i class="fas light-text fa-link clear"></i>');
+    mid_header = $('<h2 class="clear">Links</h2>');
+
+    mid_text = '<div id="links"><div class="link-holder rec-bud" data_id = "rb"><a href="https://jobu206.github.io/RecipeBuddy" target="_blank"><div class="thumbnail recipe"><div class="banner">Play</div></div></a></div>';
+    mid_text += '<div class="link-holder" data_id = "rb"><a href="https://github.com/GregoryLanter/RecipeBuddy" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div>';
+    
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
+    bottom_header = $('<h2 class="clear">Notes</h2>');
+    bottom_text = "A jQuery app using timers, input, and modal to schedule trains.";
+    instructions = $('<h4>Click an icon learn more about that program</h4>');
+
+}
+
 function clear(){
     $(".clear").remove();
     $(".bio").text("");
