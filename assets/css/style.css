@@ -187,7 +187,7 @@ body{
 
 .thumbnail{
     height: 130px;
-    width: 115px;
+    width: 100%;
     left:10%;
 }
 
@@ -203,8 +203,8 @@ body{
     position: relative;
     top:3%;
     height:150px;
-    width:60%;
-    left:12%;
+    width:84%;
+    left:8%;
     margin-bottom: 23px;
 }
 .link-holder{
@@ -353,4 +353,33 @@ td{
     left: -1px;
     display: block;
     font-size: 20px;
+}
+
+.spacer{
+    position: relative;
+    left:0px;
+    width:100%;
+    height:165px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 991px) {
+/**{
+    border-radius: 5px;
+    border: 1px solid blue
+}*/
+.git{
+    margin-left:10px;
+}
+.hangman, .bart-rpg, .beer-game, .ajax, .train, .rec-bud{
+    width:72%;
+    margin-left: 4%;
+}
+.exp-header, .bio-header, .program-header{
+    height:0px;
+}
+h4{
+    font-size: 20px;
+}
 }
