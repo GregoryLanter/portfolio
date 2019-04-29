@@ -125,7 +125,7 @@ function bart(){
     
     bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
     bottom_header = $('<h2 class="clear">Notes</h2>');
-    bottom_text = "A jQuery simple Role Playimg game.";
+    bottom_text = "A simple role playing game made with jQuery.";
     instructions = $('<h4>Click an icon learn more about that program</h4>');
 }
 function beer(){
