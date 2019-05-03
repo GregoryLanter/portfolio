@@ -221,13 +221,24 @@ body{
     margin-left: 10%;
     float: left;
 }
-.hangman, .bart-rpg, .beer-game, .ajax, .train, .rec-bud{
+.hangman, .bart-rpg, .beer-game, .ajax, .train, .rec-bud, .liri{
     width:52%;
     margin-left: 4%;
 }
 
 #info-space{
     width: 100%
+}
+.liri{
+    background-image: url(../images/liri.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.liri-node{
+    background-image: url(../images/liri.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
 }
 .hockey{
     background-image: url(../images/hockey.png);
@@ -364,7 +375,7 @@ td{
     width:100%;
     height:165px;
     border-radius: 5px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .image-holder{
     width:98%;
