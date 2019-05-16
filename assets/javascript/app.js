@@ -117,6 +117,23 @@ function liri(){
     instructions = $('<h4>Click an icon learn more about that program</h4>');
 }
 
+function bamazon(){
+    clear();
+    
+    top_button = $('<i class="fas fa-terminal light-text clear icon-2"></i>');
+    top_header = $('<h2 class="clear">Title</h2>');
+    top_text = "<h4>liri-node-app</h4>";
+    mid_button = $('<i class="fas light-text fa-link clear"></i>');
+    mid_header = $('<h2 class="clear">Links</h2>');
+    //mid_text = '<div id="links"><div class="link-holder bamazon" data_id = "bamazon"><a href="https://github.com/GregoryLanter/Bamazon" target="_blank"><div class="thumbnail liri-node"><div class="banner">Play</div></div></a></div>';
+    mid_text = '<div class="link-holder" data_id = "bamazon"><a href="https://github.com/GregoryLanter/liri-node-app" target="_blank"><div class="thumbnail git"><div class="banner">Git Repo</div></div></a></div></div>';
+    
+    bottom_button = $('<i class="fas light-text fa-clipboard clear icon-3"></i>');
+    bottom_header = $('<h2 class="clear">Notes</h2>');
+    bottom_text = "A node.js program with MySQL to act as a sales app.";
+    instructions = $('<h4>Click an icon learn more about that program</h4>');
+}
+
 
 function nhl(){
     clear();
